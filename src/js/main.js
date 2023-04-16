@@ -1,3 +1,5 @@
+import { scroll_to_top_array } from "./exports/scroll_top.js";
+
 // SCROLL HANDLER
 
 // Get the current scroll position and store it in local storage
@@ -29,13 +31,6 @@ function scrollToTop() {
     window.scrollTo(0, top - top / 8);
   }
 }
-
-const scroll_to_top_array = [
-  "about-us",
-  "contact-us",
-  "privacy-policy",
-  "terms-of-use",
-];
 
 if (scroll_to_top_array.includes(getCurrentPage())) {
   $(window).on("load", function () {
