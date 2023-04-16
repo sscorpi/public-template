@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: M PLUS Rounded\ 1c,SF UI Text,Helvetica Neue,Helvetica,Roboto,sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+}
+/* Navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #6200ffa9;
+    padding: 0rem 5rem;
+    backdrop-filter: blur(5px);
+    height: 70px;
+    z-index: 10;
+    transition: .5s ease-in-out;
+}
+.navbar-logo{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: aliceblue;
+    letter-spacing: 1px;
+    user-select: none;
+}
+.navbar-svg{
+    margin-right: 0.5rem;
+}
+.navbar-btn{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 5px;
+    padding: .7rem .5rem;
+}
+.navbar-btn:hover{
+    color: #00eaff;
+}
+/* Navbar */
+/* Footer */
+footer{
+    background: #ddd;
+    border-top: 1px solid #dadada;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 2rem;
+}
+.cookie-container p {
+    margin: auto 5px;
+    line-height: 1;
+    font-size: 15px
+}
+
+.cookie-container {
+    position: fixed;
+    z-index: 3;
+    bottom: -100%;
+    left: 0;
+    height: 50px;
+    font-weight: 600;
+    right: 0;
+    background: #6200ffa9;
+    backdrop-filter: blur(5px);
+    color: #f5f6fa;
+    padding-left: 32px;
+    transition: .4s
+}
+
+.cookie-container.active {
+    bottom: 0
+}
+
+.cookie-btn {
+    background: #06f;
+    border: 0;
+    color: #e7e7e7;
+    padding: 0 20px;
+    font-size: 15px;
+    cursor: pointer
+}
+
+.cookie-btn:hover {
+    background: #00eaff;
+    color: #000
+}
+/* Footer */
+/* Pages */
+.page-content{
+    height: 100vh;
+    display: flex;
+    background-color: #151515;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header-title{
+    font-size: 5rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #0000004d;
+}
+.header-text{
+    font-size: 1.3rem;
+    text-align: center;
+    outline: 1px solid aliceblue;
+    line-height: 1.5;
+}
+.header-sub-text{
+    font-size: 1.3rem;
+    text-align: center;
+    width: 50%;
+}
+.page-content .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    gap: 1rem;
+}
+#home {
+    background: url(../imgs/static/content/mass_bg.svg) no-repeat center center/cover;
+}
+#custom-page{
+    background: url(../imgs/static/content/mass_bg_third.svg) no-repeat center center/cover;
+}
+.secondary-bg{
+    background: url(../imgs/static/content/mass_bg_second.svg) no-repeat center center/cover;
+}
+/* Pages */
