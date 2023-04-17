@@ -1,10 +1,10 @@
 <?php
-require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Navbar/navbar.php");
-require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Footer/footer.php");
-require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HelpCenterItem/helpcenteritem.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Navbar/Navbar.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Footer/Footer.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/components/HelpCenterItem/HelpItem.php");
 
 $props_nav = [
-    "title" => "Privacy - Fraud PHP"
+    "title" => "Privacy Policy - Fraud PHP"
 ];
 $props_item = [
     "id" => "privacy-policy",
@@ -13,5 +13,5 @@ $props_item = [
 ?>
 
 <?= Navbar($props_nav) ?>
-<?= HelpCenterItem($props_item) ?>
+<?= HelpItem($props_item) ?>
 <?= Footer() ?>
