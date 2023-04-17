@@ -1,6 +1,6 @@
 <?php
-require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Navbar/navbar.php");
-require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Footer/footer.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Navbar/Navbar.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Footer/Footer.php");
 $props = [
     "title" => "Custom Page Title - Fraud PHP",
     "description" => "You can change the page title, description and keywords on each page. You must require the navbar and footer components on each page.",
