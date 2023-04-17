@@ -1,6 +1,9 @@
 <?php
 require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Navbar/navbar.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Footer/footer.php");
 ?>
+<?= Navbar() ?>
+
 <section id="home" class="page-content">
     <div class="content white-text light-text">
         <h1 class="flex-display gap-5 header-title bold-text">Fraud <div class="blue-text">PHP</div>
@@ -10,4 +13,5 @@ require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Navbar/navbar.php");
         <a class="no-decoration btn white-text primary-btn m-t-10" href="custom-page">Custom Page</a>
     </div>
 </section>
-<?php require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Footer/footer.php"); ?>
+
+<?= Footer() ?>
