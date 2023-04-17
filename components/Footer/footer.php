@@ -4,7 +4,7 @@ function Footer($props = [])
     return <<<HTML
     <div class="cookie-container flex-display justify-between">
         <p>
-            This is a sample cookie message. You can change it from the <a class="link blue-text">/components/Footer/footer.php</a>.
+            This is a sample cookie message. You can change it from the <a class="link blue-text">/components/Footer/Footer.php</a>.
         </p>
         <button class="cookie-btn">Got it</button>
     </div>
@@ -16,15 +16,13 @@ function Footer($props = [])
                 <li><a class="no-decoration link blue-text" href="/help-center/terms-of-use">Terms of Use</a></li>
                 <li><a class="no-decoration link blue-text" href="/help-center/privacy-policy">Privacy Policy</a></li>
             </ul>
-            <div class="flex-display gap-5">
-                <p>© 2023 Fraud
-                <div class="blue-text bold-text">PHP</div> All Rights Reserved. <div class="blue-text bold-text">v2.1.1</div>
-                </p>
-            </div>
+            <p>© 2023 Fraud
+                <span class="blue-text bold-text">PHP</span> All Rights Reserved. <span class="blue-text bold-text">v2.1.2</span>
+            </p>
         </div>
     </footer>
     <script src="/src/js/cookie.js"></script>
-    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/.fraud/js/main.js"></script>
     </body>
     </html>
 HTML;

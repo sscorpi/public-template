@@ -1,6 +1,6 @@
 <?php
-require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Navbar/navbar.php");
-require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Footer/footer.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Navbar/Navbar.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/components/Footer/Footer.php");
 ?>
 <?= Navbar() ?>
 
