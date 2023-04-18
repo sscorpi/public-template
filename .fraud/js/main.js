@@ -12,38 +12,29 @@ if (appId != "_fraud") {
 
 // Get the current scroll position and store it in local storage
 
-const scrollPosition = parseInt(sessionStorage.getItem("scrollPosition"));
-
+const pos = parseInt(sessionStorage.getItem("pos"));
 $(window).on("beforeunload", function () {
-  sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+  sessionStorage.setItem("pos", window.scrollY.toString());
 });
-
-// Retrieve the scroll position from local storage and scroll to it
 $(window).on("load", function () {
-  if (!isNaN(scrollPosition)) {
-    window.scrollTo(0, scrollPosition);
-    sessionStorage.removeItem("scrollPosition"); // Remove the stored value after using it
+  if (!isNaN(pos)) {
+    window.scrollTo(0, pos);
+    sessionStorage.removeItem("pos");
   }
 });
-
 function getCurrentPage() {
   let mypage = window.location.pathname.split("/");
   return mypage[mypage.length - 1].split(".")[0];
 }
-
-function scrollToTop() {
-  const top = document.documentElement.scrollTop || document.body.scrollTop;
-
-  if (top > 0) {
-    window.requestAnimationFrame(scrollToTop);
-    window.scrollTo(0, top - top / 8);
+if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
+} else if (
+  performance.navigation.type === performance.navigation.TYPE_NAVIGATE
+) {
+  if (scroll_to_top_array.includes(getCurrentPage())) {
+    $(window).on("load", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   }
-}
-
-if (scroll_to_top_array.includes(getCurrentPage())) {
-  $(window).on("load", function () {
-    scrollToTop();
-  });
 }
 // SCROLL HANDLER
 
