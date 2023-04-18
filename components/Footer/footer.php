@@ -17,7 +17,7 @@ function Footer($props = [])
                 <li><a class="no-decoration link blue-text" href="/help-center/privacy-policy">Privacy Policy</a></li>
             </ul>
             <p>© 2023 Fraud
-                <span class="blue-text bold-text">PHP</span> All Rights Reserved. <span class="blue-text bold-text">v2.1.2</span>
+                <span class="blue-text bold-text">PHP</span> All Rights Reserved. <span class="blue-text bold-text">v2.1.3</span>
             </p>
         </div>
     </footer>
