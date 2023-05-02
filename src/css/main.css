@@ -52,44 +52,6 @@ footer{
     font-family: 'Poppins', sans-serif;
     padding: 1rem 2rem;
 }
-.cookie-container p {
-    margin: auto 5px;
-    line-height: 1;
-    font-size: 15px
-}
-
-.cookie-container {
-    position: fixed;
-    z-index: 3;
-    bottom: -100%;
-    left: 0;
-    height: 50px;
-    font-weight: 600;
-    right: 0;
-    background: #6200ffa9;
-    backdrop-filter: blur(5px);
-    color: #f5f6fa;
-    padding-left: 32px;
-    transition: .4s
-}
-
-.cookie-container.active {
-    bottom: 0
-}
-
-.cookie-btn {
-    background: #06f;
-    border: 0;
-    color: #e7e7e7;
-    padding: 0 20px;
-    font-size: 15px;
-    cursor: pointer
-}
-
-.cookie-btn:hover {
-    background: #00eaff;
-    color: #000
-}
 /* Footer */
 /* Pages */
 .page-content{

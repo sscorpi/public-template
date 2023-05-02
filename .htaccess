@@ -1,6 +1,10 @@
 php_value display_errors On
-ErrorDocument 404 /error/404.html
+DirectoryIndex App.php
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php [NC,L] 
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ App.php [L,QSA]

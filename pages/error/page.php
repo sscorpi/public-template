@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/src/imgs/static/content/favicon.svg"
-      type="image/x-icon"
-    />
-    <title>Page Not Found - Fraud PHP</title>
+<?php
+// Set Page Metadata
+$PAGE_TITLE = "Page Not Found - Fraud PHP";
+
+function ErrorPage()
+{
+  return <<<HTML
     <style>
       body {
         background-color: #f1f1f1;
@@ -64,16 +59,20 @@
         opacity: 1;
       }
     </style>
-  </head>
-
-  <body>
     <div class="container">
       <h1>404: Not Found</h1>
       <p>
         This is the 404 page. You can customize this page by editing the
         /error/404.html.
       </p>
-      <a class="btn" href="/">Return to Home</a>
+      <a data-type="fraud-link" class="btn" href="/">Return to Home</a>
     </div>
-  </body>
-</html>
+HTML;
+}
+
+$result = [
+  "content" => ErrorPage(),
+  "title" => "Page Not Found - Fraud PHP",
+];
+
+echo json_encode($result);
