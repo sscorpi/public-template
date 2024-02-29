@@ -1,4 +1,4 @@
-# This project is discontinued, check it's successor [PTW-Template](https://jquery.com/](https://github.com/yehuuu6/ptw-template) instead.
+# This project is discontinued, check it's successor [PTW-Template](https://github.com/yehuuu6/ptw-template) instead.
 
 # Fraud PHP
 
