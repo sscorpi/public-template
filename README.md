@@ -1,3 +1,5 @@
+# This project is discontinued, check it's successor [PTW-Template]([https://jquery.com/](https://github.com/yehuuu6/ptw-template)) instead.
+
 # Fraud PHP
 
 ❓ A php website template that uses component based design and simulates Next js.
